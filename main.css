@@ -3,9 +3,25 @@ body {
 }
 .custom-text1 {
   font-family: "Monoton", cursive;
+  font-size: 68px;
+  font-weight: 100;
+  cursor: pointer;
+  display: flex;
+}
+.custom-text1 span {
+  transition: all 0.3s ease;
+  display: flex;
+  margin: 0 3px;
+}
+.custom-text1 span:hover {
+  font-weight: 700;
+  color: var(--main-color);
+  transform: scale(1.1);
 }
 .custom-text2 {
   font-family: "East Sea Dokdo", cursive;
+  font-size: 80px;
+  color: var(--main-color);
 }
 .button {
   padding: 9px 15px;
@@ -55,6 +71,7 @@ nav {
 }
 .nav-brand span {
   font-family: "Monoton", cursive;
+  font-weight: 100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +97,32 @@ nav {
   color: var(--white-color);
   font-size: 18px;
   font-weight: 500;
+  border-bottom: 1.5px solid transparent;
 }
 .desktop-links li a:hover {
   border-bottom: 1.5px solid var(--main-color);
 }
+
+/* HEADER BENNER SECTION STARTS HERE */
+
+.header-banner {
+  background: url(./img/header.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  height: 450px;
+  padding: 50px 50px 30px 50px;
+  position: relative;
+  color: var(--white-color);
+}
+.header-banner p {
+  width: 500px;
+  line-height: 1.7;
+}
+.header-banner img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+}
+/* HEADER BENNER SECTION ENDS HERE */
